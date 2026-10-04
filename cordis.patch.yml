@@ -1,0 +1,9 @@
+# dsh-video-background bundle patch: mount the (empty) host row.
+# The package is a pure client plugin: the apply() in lib/index.js does
+# nothing host-side and exists only so the package is a live loader entry
+# (client-modules only qualifies entries with a live fiber); the browser
+# half is discovered automatically through the package.json dsh.client
+# declaration and served at /plugins/dsh-video-background/client.js.
+- insert:
+    - id: dsh-video-background
+      name: dsh-video-background

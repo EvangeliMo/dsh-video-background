@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+src/client/media.gen.js
+# 22.5 MB source video: keep it out of git, drop your own here to rebuild
+# (scripts/build-client.mjs base64-embeds it into lib/client.js)
+assets/background.mp4
+*.mp4
+*.webm
+*.mov
+*.m4v
